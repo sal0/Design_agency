@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Design Agency</title>
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,19 +20,70 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
 
 </head>
 
 <body>
-    <header class="header container">
-        <p class="logo">Creative <span>Agency</span></p>
-        
+    <header class="header container d-flex">
+        <div class="flex-fill">
+            <a href="#">
+                <p class="logo">Creative <span>Agency</span></p>
+            </a>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list d-flex">
+                <li>Home</li>
+                <li>Portfolio</li>
+                <li>Blog</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
     </header>
-    <section class="banner">
-        first main picture1
+    <section class="banner container-fluid d-flex">
+        <p>AMAZING NEW</p>
+        <p class="lato">DESIGN AGENCY</p>
+        <p>TO CREATE YOUR PROJECT</p>
     </section>
-    <section class="activity">
-        list section
+    <section class="activity container d-flex">
+        <div class="item flex-fill">
+            <div class="circle">
+                <img src="images/web-logo.svg" alt="web-design icon">
+            </div>
+            <h5>Web Design</h5>
+            <p>We are making web design,code
+                your websites,and create a Wordpress
+                themes as well.</p>
+        </div>
+        <div class="item flex-fill">
+            <div class="circle">
+                <img src="images/paint-logo.svg" alt="graphic design icon">
+            </div>
+            <h5>Graphic Design</h5>
+            <p>From business cards,to posters,mugs,
+                lighters and book covers,we can make
+                you anything you need.</p>
+        </div>
+        <div class="item flex-fill">
+            <div class="circle">
+                <img src="images/UI-logo.svg" alt="ui icon">
+            </div>
+            <h5>UI Design</h5>
+            <p>Creating UI design on basic design
+                principles and using modern and
+                most popular apps on the market.</p>
+        </div>
+        <div class="item flex-fill">
+            <div class="circle">
+                <img src="images/copywriting-logo.svg" alt="copywriting icon">
+            </div>
+            <h5>Copywriting</h5>
+            <p>Good copy is everything!
+                So let us write you a bet copy possible
+                and reduce your bounce rate,today.</p>
+        </div>
     </section>
     <section class="mail">
         mail section
