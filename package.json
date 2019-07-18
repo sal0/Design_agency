@@ -1,0 +1,24 @@
+{
+  "name": "design_agency",
+  "version": "1.0.0",
+  "description": "Unilab final project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sal0/Design_agency.git"
+  },
+  "author": "salome mindiashvili",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sal0/Design_agency/issues"
+  },
+  "homepage": "https://github.com/sal0/Design_agency#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  }
+}

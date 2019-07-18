@@ -1,0 +1,15 @@
+$blue:#3ec6ff;
+
+body{
+    font-family: 'Roboto', sans-serif!important;
+}
+header{
+    p.logo{
+        font-weight: 100;
+        color: $blue;
+        font-size: 36pt;
+        span{
+            font-weight: 900;
+        }
+    }
+}
