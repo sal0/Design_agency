@@ -9,16 +9,21 @@ body{
             font-weight: 100;
             color: $blue;
             font-size: 36px;
+            margin-top: 7px;
+            margin-bottom: 0;
             span{
                 font-weight: 900;
             }
         }
         ul.nav-list{
+                margin-top: 7px;
+                margin-bottom: 10px;
             li{
             margin: 20px;
             align-content: center;
             font-size: 14px;
             color: #a1a1a1;
+    
             }
         }
     }
@@ -57,9 +62,6 @@ body{
             font-size: 14px;
             color: $gray;
         }
-
-        
-    
         div.item{
             margin: 15px; 
             div.circle{
@@ -74,5 +76,52 @@ body{
                 
             } 
         }
+    }
+    
+    section.mail{
+
+        height: 250px;
+        background: url(../images/road.jpg) no-repeat center center;
+        background-size: cover;
+        position: relative;
+
+        &::after{
+            content: ' ';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:$gray;
+            opacity: 0.5;
+        }
+
+        h6{
+            color: #fff;
+        }
+
+        .subscription{
+            justify-content: center;
+            flex-direction:column;
+            flex: 1;
+
+            form {
+                display: flex;
+                z-index: 10;
+
+                > div {
+                    flex: 1;
+                    border: 1px solid #cacaca;
+                    margin-right: 10px;
+                }
+                > button{
+                    min-width: 350px;
+                    background-color: $blue;
+                    border: none;
+                    height: 40px;
+                }
+            }
+        }
+        
     }
 }
