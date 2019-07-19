@@ -86,3 +86,107 @@ body {
           background-color: #3ec6ff;
           border: none;
           height: 40px; }
+  body section.slider {
+    height: 295px;
+    padding-left: 0;
+    padding-right: 0; }
+    body section.slider > div {
+      margin-top: 100px; }
+    body section.slider .photo1 {
+      background: url(../images/1.jpg) no-repeat center center;
+      background-size: cover; }
+    body section.slider .photo2 {
+      background: url(../images/2.jpg) no-repeat center center;
+      background-size: cover; }
+    body section.slider .photo3 {
+      background: url(../images/3.jpg) no-repeat center center;
+      background-size: cover; }
+    body section.slider .photo4 {
+      background: url(../images/4.jpg) no-repeat center center;
+      background-size: cover; }
+    body section.slider .photo {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: #fff;
+      align-items: center;
+      flex: 1; }
+      body section.slider .photo p {
+        z-index: 30;
+        display: none; }
+      body section.slider .photo:hover p {
+        display: block; }
+        body section.slider .photo:hover p.title {
+          font-size: 14px; }
+      body section.slider .photo:hover::after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #3ec6ff;
+        opacity: 0.5; }
+  body section.team {
+    text-align: center;
+    color: #a1a1a1;
+    margin-top: 150px;
+    margin-bottom: 160px; }
+    body section.team .text {
+      margin-bottom: 130px; }
+    body section.team .teampic {
+      display: flex;
+      flex-direction: row;
+      height: 275px; }
+    body section.team .teammember {
+      position: relative; }
+      body section.team .teammember:hover::after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #3ec6ff;
+        opacity: 0.5; }
+    body section.team .team1 {
+      background: url(../images/team1.jpg) no-repeat center center;
+      background-size: cover;
+      flex: 1;
+      margin-right: 30px; }
+    body section.team .team2 {
+      background: url(../images/team2.jpg) no-repeat center center;
+      background-size: cover;
+      flex: 1;
+      margin-right: 30px; }
+    body section.team .team3 {
+      background: url(../images/team3.jpg) no-repeat center center;
+      background-size: cover;
+      flex: 1;
+      margin-right: 30px; }
+    body section.team .team4 {
+      background: url(../images/team4.jpg) no-repeat center center;
+      background-size: cover;
+      flex: 1;
+      margin-right: 30px; }
+  body section.review {
+    height: 620px;
+    background: url(../images/review.jpg) no-repeat center center;
+    background-size: cover;
+    flex: 1;
+    filter: opacity(0.8);
+    align-items: center;
+    justify-content: center; }
+    body section.review > div {
+      text-align: center;
+      color: #fff; }
+      body section.review > div > img {
+        border-radius: 100%;
+        padding: 10px;
+        background-color: #fff;
+        height: 50px;
+        width: 50px;
+        margin-bottom: 125px; }
+      body section.review > div > .fbtext {
+        margin-bottom: 120px; }

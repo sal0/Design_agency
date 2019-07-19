@@ -124,4 +124,155 @@ body{
         }
         
     }
+    section.slider{
+        height: 295px;
+        padding-left: 0;
+        padding-right: 0;
+        >div{
+            
+            margin-top: 100px;
+            
+
+        }
+        .photo1{
+            background: url(../images/1.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        .photo2{
+            background: url(../images/2.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        .photo3{
+            background: url(../images/3.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        .photo4{
+            background: url(../images/4.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        .photo{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: #fff;
+            align-items: center;
+            flex: 1;
+            p{
+                z-index: 30;
+                display: none;
+            }
+            &:hover{
+                p {
+                    display: block;
+                    &.title{
+                        font-size: 14px;
+
+                    }
+
+
+                }
+
+                &::after{
+                    content: ' ';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background:$blue;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    section.team{
+        
+        text-align: center;
+        color: $gray;
+        margin-top: 150px;
+        margin-bottom: 160px;
+        
+        .text{
+            margin-bottom: 130px;
+        }
+
+
+        .teampic{
+            display: flex;
+            flex-direction: row;
+            height: 275px;
+        }
+
+        .teammember {
+            position: relative;
+
+            &:hover {
+                &::after {
+                    content: ' ';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background:$blue;
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        .team1{
+            background: url(../images/team1.jpg) no-repeat center center;
+            background-size: cover;
+            flex: 1;
+            margin-right: 30px;
+        }
+        .team2{
+            background: url(../images/team2.jpg) no-repeat center center;
+            background-size: cover;
+            flex: 1;
+            margin-right: 30px;
+        }
+        .team3{
+            background: url(../images/team3.jpg) no-repeat center center;
+            background-size: cover;
+            flex: 1;
+            margin-right: 30px;
+        }
+        .team4{
+            background: url(../images/team4.jpg) no-repeat center center;
+            background-size: cover;
+            flex: 1;
+            margin-right: 30px;
+        }
+        
+    }
+    section.review{
+            height: 620px;
+            background: url(../images/review.jpg) no-repeat center center;
+            background-size: cover;
+            flex: 1;
+            filter: opacity(0.8);
+            align-items: center;
+            justify-content: center;
+            >div{
+                text-align: center;
+                color: #fff;
+                >img{
+                    border-radius: 100%;
+                    padding: 10px;
+                    background-color: #fff;
+                    height: 50px;
+                    width: 50px;
+                    margin-bottom: 125px;
+               
+                }
+                > .fbtext{
+                    margin-bottom: 120px;
+
+                }
+            }
+
+
+    }
 }
