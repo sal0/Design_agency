@@ -32,7 +32,7 @@ body{
     section.banner{
         background: url(../images/banner.jpg) no-repeat center center;
         background-size: cover;
-        height: 900px;
+        height: calc(100vh - 78px);
         filter: opacity(0.8);
         justify-content: center;
         align-items: center;
@@ -78,12 +78,13 @@ body{
                 
             } 
         }
+    
     }
     
     section.mail{
 
         height: 250px;
-        background: url(../images/road.jpg) no-repeat center center;
+        background: url(../images/road1.jpg) no-repeat center center;
         background-size: cover;
         background-attachment: fixed;
         position: relative;
@@ -95,18 +96,24 @@ body{
             left: 0;
             right: 0;
             bottom: 0;
-            background:$gray;
-            opacity: 0.5;
+            background:rgba(161, 161, 161, 0.5);
+            
         }
 
         h6{
             color: #fff;
+            z-index: 10;
         }
 
         .subscription{
             justify-content: center;
             flex-direction:column;
             flex: 1;
+
+            .mailtext{
+                padding-left: 10px;
+                color: #fff;
+            }
 
             form {
                 display: flex;
@@ -277,5 +284,65 @@ body{
             }
 
 
+    }
+    section.price{
+        height: 480px;
+
+        .pbutton{
+            align-items: center;
+            height: 240px;
+            text-align: center;
+            color: $gray;
+            font-size: 24px;
+            margin-top: 20px;
+            
+
+            >.price1{
+                flex: 1;
+                padding: 30px;
+                transition: 0.6s;
+                button{
+                    background-color: $blue;
+                    border:none;
+                    transition: 0.6s;
+                }
+                >h3{
+                    font-size: 36px;
+                }
+                &:hover{
+                    background-color: $blue;
+                    color: #fff;
+                    button{
+                        background-color: #fff;
+                        color: $gray;
+                        border: none;
+                    }
+                }
+            }
+        }
+        .pricelist{
+            text-align: center;
+            color: $gray;
+
+            .plist{
+                flex:1;
+                li{
+                    line-height: 2;
+                }
+            }
+        }
+        
+
+    }
+    section.map{
+        height: 725px;
+        background: url(../images/map.jpg)no-repeat center center;
+        background-size: cover;
+        .contact{
+            height: 670px;
+            width: 830px;
+            background-color: $gray;
+        }
+        
     }
 }
