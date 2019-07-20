@@ -34,15 +34,16 @@
         </div>
         <nav class="nav">
             <ul class="nav-list d-flex">
-                <li>Home</li>
-                <li>Portfolio</li>
-                <li>Blog</li>
+                <li> <a href="#Home">Home</a></li>
                 <li> <a href="#services"> Services </a></li>
-                <li>Contact</li>
+                <li> <a href="#Portfolio">Portfolio</a></li>
+                <li> <a href="#team">Team</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
+            <img class=search src="images/search.svg" alt="search icon">
         </nav>
     </header>
-    <section class="banner container-fluid d-flex">
+    <section id="Home" class="banner container-fluid d-flex">
         <p>AMAZING NEW</p>
         <p class="lato">DESIGN AGENCY</p>
         <p>TO CREATE YOUR PROJECT</p>
@@ -102,46 +103,89 @@
         </div>
 
     </section>
-    <section class="slider container-fluid d-flex">
-        <div class="photo photo1 flex-fill ">
+    <section id="Portfolio" class="slider container-fluid d-flex">
+        <div class="photo photo1  ">
             <p>ONE DAY IN IRELAND</p>
             <p class="title">PHOTOGRAPHY</p>
         </div>
-        <div class="photo photo2 flex-fill">
-            <p>ONE DAY IN IRELAND</p>
+        <div class="photo photo2 ">
+            <p>ONE DAY IN GERMANY</p>
             <p class="title">PHOTOGRAPHY</p>
         </div>
-        <div class="photo photo3 flex-fill">
-            <p>ONE DAY IN IRELAND</p>
+        <div class="photo photo3 ">
+            <p>ONE DAY IN GEORGIA</p>
             <p class="title"> PHOTOGRAPHY</p>
         </div>
-        <div class="photo photo4 flex-fill">
-            <p>ONE DAY IN IRELAND</p>
+        <div class="photo photo4 ">
+            <p>ONE DAY IN VIENA</p>
             <p class="title">PHOTOGRAPHY</p>
         </div>
 
     </section>
-    <section class="team container">
+    <section id="team" class="team container">
         <div class="text">
             <h3>
                 MEET OUR TEAM
             </h3>
-            <p>We are a very young,but very passionate design agency based in London,UK.</p>
-            <p> Let us help you with your next project,today.</p>
+            <p>We are a very young,but very passionate design agency based in London,UK.
+                Let us help you with your next project,today.</p>
         </div>
         <div class="teampic container d-flex">
-            <div class="team1 teammember"></div>
-            <div class="team2 teammember"></div>
-            <div class="team3 teammember"></div>
-            <div class="team4 teammember"></div>
+            <div class="team1 teammember">
+                <div class="teammember1">
+                    <h4>James HEWIT</h4>
+                    <p>Web Designer</p>
+                    <img src="images/facebook2.svg" alt="facebook icon2">
+                    <img class="twitter" src="images/twitter.svg" alt="twitter icon">
+                    <img src="images/pinterest.png" alt="pinterest icon">
+                </div>
+            </div>
+            <div class="team2 teammember">
+                <div class="teammember1">
+                    <h4>Sara MILLER </h4>
+                    <p>Web Developer</p>
+                    <img src="images/facebook2.svg" alt="facebook icon2">
+                    <img class="twitter" src="images/twitter.svg" alt="twitter icon">
+                    <img src="images/pinterest.png" alt="pinterest icon">
+                </div>
+
+            </div>
+            <div class="team3 teammember">
+                <div class="teammember1">
+                    <h4>Josh TUCKER </h4>
+                    <p>Office Manager</p>
+                    <img src="images/facebook2.svg" alt="facebook icon2">
+                    <img class="twitter" src="images/twitter.svg" alt="twitter icon">
+                    <img src="images/pinterest.png" alt="pinterest icon">
+                </div>
+            </div>
+            <div class="team4 teammember">
+                <div class="teammember1">
+                    <h4>Nikole SMITH </h4>
+                    <p>Marketing Manager</p>
+                    <img src="images/facebook2.svg" alt="facebook icon2">
+                    <img class="twitter" src="images/twitter.svg" alt="twitter icon">
+                    <img src="images/pinterest.png" alt="pinterest icon">
+                </div>
+
+
+            </div>
         </div>
     </section>
     <section class="review container-fluid d-flex">
-        <div><img src="images/Facobook-icon.png" alt="facebook icon">
-            <p class="fbtext">These guys are just incredible! I was able to get my project done in just 7 days. </p>
-            <p>I mean,AMAZING service! Highly recommended.</p>
+
+        <div class=data>
+            <img class=logo src="images/Facobook-icon.svg" alt="facebook icon">
+            <p class="fbtext">These guys are just incredible! I was able to get my project done in just 7 days.
+                </br>
+                I mean,AMAZING service! Highly recommended.</p>
             <p>@Arwin_Brwst</p>
         </div>
+        <div class=actions>
+            <img class="arrow" src="images/arrow-left.svg" alt="arrow icon">
+            <img class="arrow" src="images/arrow-right.svg" alt="arrow icon2">
+        </div>
+
     </section>
     <section class="price container ">
         <div class="pbutton container d-flex">
@@ -196,16 +240,41 @@
         </div>
 
     </section>
-    <section class="map container-fluid">
-        <div class="map1"></div>
-        <div class="contact"> 
+    <section id="Contact" class="map container-fluid">
+        <div class="contact">
+            <div class=info>
+                <h4>Contact Us</h4>
+                <p>George St 123056 Central </p>
+                <p>London,United Kingdom</p>
+                <p>Phone: 11236 5898</p>
+                <p>Fax: 11236 5898</p>
+            </div>
+            <form>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <input type="Phone" class="form-control" id="exampleInputPhone1" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                    <input type="Subject" class="form-control" id="exampleInputSubject1" placeholder="Subject">
+                </div>
+
+
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Your Message</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
 
         </div>
 
 
     </section>
     <footer class="footer">
-        footer
+        <p> Made with love by <a href="#">WebDonut.net</a> using BONES WIreframe Kit | All Rights Reserved |
     </footer>
 
 </body>

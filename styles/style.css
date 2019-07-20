@@ -3,6 +3,8 @@ html {
 
 body {
   font-family: "Roboto", sans-serif !important; }
+  body header a {
+    color: #a1a1a1; }
   body header p.logo {
     font-weight: 100;
     color: #3ec6ff;
@@ -11,16 +13,26 @@ body {
     margin-bottom: 0; }
     body header p.logo span {
       font-weight: 900; }
-  body header ul.nav-list {
+  body header nav ul.nav-list {
     margin-top: 7px;
     margin-bottom: 10px; }
-    body header ul.nav-list li {
+    body header nav ul.nav-list li {
       margin: 20px;
       -webkit-align-content: center;
       -ms-flex-line-pack: center;
       align-content: center;
       font-size: 14px;
       color: #a1a1a1; }
+      body header nav ul.nav-list li a:hover {
+        color: #3ec6ff !important;
+        background-color: #fdfdfd; }
+  body header nav img.search {
+    cursor: pointer;
+    -webkit-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear; }
+    body header nav img.search:hover {
+      opacity: .5; }
   body section.banner {
     background: url(../images/banner.jpg) no-repeat center center;
     background-size: cover;
@@ -87,6 +99,8 @@ body {
       right: 0;
       bottom: 0;
       background: rgba(161, 161, 161, 0.5); }
+    body section.mail label {
+      z-index: 1; }
     body section.mail h6 {
       color: #fff;
       z-index: 10; }
@@ -125,6 +139,10 @@ body {
           background-color: #3ec6ff;
           border: none;
           height: 40px; }
+          body section.mail .subscription form > button:hover {
+            background-color: #fff;
+            color: #a1a1a1;
+            border: none; }
   body section.slider {
     height: 295px;
     padding-left: 0;
@@ -190,6 +208,12 @@ body {
     margin-bottom: 160px; }
     body section.team .text {
       margin-bottom: 130px; }
+      body section.team .text h3 {
+        font-size: 36px; }
+      body section.team .text p {
+        font-size: 24px;
+        padding-left: 150px;
+        padding-right: 150px; }
     body section.team .teampic {
       display: -webkit-box;
       display: -webkit-flex;
@@ -202,7 +226,32 @@ body {
       flex-direction: row;
       height: 275px; }
     body section.team .teammember {
-      position: relative; }
+      position: relative;
+      color: #fff;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      body section.team .teammember .teammember1 {
+        display: none;
+        z-index: 30; }
+      body section.team .teammember h4 {
+        padding-top: 60px; }
+      body section.team .teammember img {
+        padding-top: 80px; }
+      body section.team .teammember .twitter {
+        padding-left: 20px;
+        padding-right: 20px; }
+      body section.team .teammember:hover .teammember1 {
+        display: block; }
       body section.team .teammember:hover::after {
         content: ' ';
         position: absolute;
@@ -252,8 +301,8 @@ body {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    -webkit-filter: opacity(0.8);
-    filter: opacity(0.8);
+    -webkit-filter: opacity(0.6);
+    filter: opacity(0.6);
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -261,19 +310,38 @@ body {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center; }
-    body section.review > div {
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    body section.review > div.data {
       text-align: center;
       color: #fff; }
-      body section.review > div > img {
+      body section.review > div.data > img.logo {
         border-radius: 100%;
         padding: 10px;
         background-color: #fff;
-        height: 50px;
-        width: 50px;
-        margin-bottom: 125px; }
-      body section.review > div > .fbtext {
-        margin-bottom: 120px; }
+        height: 100px;
+        width: 100px;
+        margin-bottom: 55px; }
+      body section.review > div.data > .fbtext {
+        margin-bottom: 40px;
+        font-size: 26px;
+        z-index: 40; }
+      body section.review > div.data p {
+        font-size: 20px; }
+    body section.review > div.actions {
+      text-align: center;
+      margin-top: 90px; }
+      body section.review > div.actions img {
+        cursor: pointer;
+        -webkit-transition: 0.3s linear;
+        -o-transition: 0.3s linear;
+        transition: 0.3s linear; }
+        body section.review > div.actions img:hover {
+          opacity: .5; }
   body section.price {
     height: 480px; }
     body section.price .pbutton {
@@ -323,8 +391,52 @@ body {
   body section.map {
     height: 725px;
     background: url(../images/map.jpg) no-repeat center center;
-    background-size: cover; }
+    background-size: cover;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
     body section.map .contact {
-      height: 670px;
-      width: 830px;
-      background-color: #a1a1a1; }
+      width: 630px;
+      background-color: #a1a1a1;
+      padding: 50px 100px; }
+      body section.map .contact .info {
+        color: #fff;
+        text-align: center;
+        padding-bottom: 10px; }
+        body section.map .contact .info h4 {
+          margin-bottom: 20px;
+          font-size: 30px; }
+        body section.map .contact .info p {
+          line-height: 2px;
+          font-size: 14px; }
+      body section.map .contact form {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        body section.map .contact form button {
+          background-color: #3ec6ff;
+          border: none; }
+          body section.map .contact form button:hover {
+            background-color: #fff;
+            color: #a1a1a1;
+            border: none; }
+  body footer {
+    text-align: center;
+    font-size: 12px;
+    color: #a1a1a1;
+    margin-top: 20px; }

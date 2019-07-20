@@ -7,6 +7,10 @@ body{
     font-family: 'Roboto', sans-serif!important;
 
     header{
+        a{
+            color: #a1a1a1;
+        }
+        
         p.logo{
             font-weight: 100;
             color: $blue;
@@ -17,15 +21,38 @@ body{
                 font-weight: 900;
             }
         }
-        ul.nav-list{
-                margin-top: 7px;
-                margin-bottom: 10px;
-            li{
-            margin: 20px;
-            align-content: center;
-            font-size: 14px;
-            color: #a1a1a1;
-    
+
+        nav {
+            ul.nav-list{
+                    margin-top: 7px;
+                    margin-bottom: 10px;
+                    
+                    
+                li{
+                    margin: 20px;
+                    align-content: center;
+                    font-size: 14px;
+                    color: #a1a1a1;
+
+                    a {
+                        &:hover {
+                            color: $blue!important;
+                            background-color: #fdfdfd;
+                            
+                        }
+                    }
+        
+                }
+                
+            }
+
+            img.search {
+                   cursor: pointer;
+                    transition: 0.3s linear;
+                    
+                    &:hover {
+                        opacity: .5;
+                    }
             }
         }
     }
@@ -100,6 +127,10 @@ body{
             
         }
 
+        label {
+            z-index: 1;
+        }
+
         h6{
             color: #fff;
             z-index: 10;
@@ -129,6 +160,11 @@ body{
                     background-color: $blue;
                     border: none;
                     height: 40px;
+                    &:hover{
+                        background-color: #fff;
+                        color: $gray;
+                        border: none;
+                    }
                 }
             }
         }
@@ -205,6 +241,14 @@ body{
         
         .text{
             margin-bottom: 130px;
+            h3{
+                font-size: 36px;
+            }
+            p{
+                font-size: 24px;
+                padding-left: 150px;
+                padding-right: 150px;
+            }
         }
 
 
@@ -216,8 +260,42 @@ body{
 
         .teammember {
             position: relative;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .teammember1{
+                display: none;
+                z-index: 30;
+                
+            }
+
+            h4{
+                padding-top: 60px;
+                
+            }
+            
+            img{
+                padding-top:80px;
+                 
+                
+            }
+            
+            .twitter{
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            
 
             &:hover {
+                
+
+                .teammember1{
+                    display: block;
+                }
+                
+                
                 &::after {
                     content: ' ';
                     position: absolute;
@@ -227,6 +305,9 @@ body{
                     bottom: 0;
                     background:$blue;
                     opacity: 0.5;
+                    
+
+                    
                 }
             }
         }
@@ -262,24 +343,46 @@ body{
             background: url(../images/review.jpg) no-repeat center center;
             background-size: cover;
             flex: 1;
-            filter: opacity(0.8);
+            filter: opacity(0.6);
             align-items: center;
             justify-content: center;
-            >div{
+            flex-direction: column;
+            
+            > div.data {
                 text-align: center;
                 color: #fff;
-                >img{
+                
+                >img.logo {
                     border-radius: 100%;
                     padding: 10px;
                     background-color: #fff;
-                    height: 50px;
-                    width: 50px;
-                    margin-bottom: 125px;
-               
+                    height: 100px;
+                    width: 100px;
+                    margin-bottom: 55px;
                 }
-                > .fbtext{
-                    margin-bottom: 120px;
 
+                > .fbtext {
+                    margin-bottom: 40px;
+                    font-size: 26px;
+                    z-index: 40;
+                }
+
+                p {
+                    font-size: 20px;
+                }
+            }
+
+            > div.actions {
+                text-align: center;
+                margin-top: 90px;
+
+                img {
+                    cursor: pointer;
+                    transition: 0.3s linear;
+                    
+                    &:hover {
+                        opacity: .5;
+                    }
                 }
             }
 
@@ -338,11 +441,53 @@ body{
         height: 725px;
         background: url(../images/map.jpg)no-repeat center center;
         background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .contact{
-            height: 670px;
-            width: 830px;
+            width: 630px;
             background-color: $gray;
+            padding: 50px 100px;
+
+            .info {
+                color: #fff;
+                text-align: center;
+                padding-bottom: 10px;
+
+                h4 {
+                    margin-bottom: 20px;
+                    font-size: 30px;
+                }
+
+                p {
+                    line-height: 2px;
+                    font-size: 14px;
+                }
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                button{
+                    background-color: $blue;
+                    border:none;
+                    
+                    &:hover{
+                        background-color: #fff;
+                        color: $gray;
+                        border: none;
+                    }
+                }
+                
+            }
+            
         }
         
+    }
+    footer{
+        text-align: center;
+        font-size: 12px;
+        color: $gray;
+        margin-top: 20px;
     }
 }
